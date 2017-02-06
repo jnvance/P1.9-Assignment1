@@ -6,10 +6,10 @@ import matplotlib.pyplot as plt
 
 f_list = { 	1: lambda x: x ,
 			2: lambda x: x**2 ,
-			3: lambda x: x**3 }
+			3: lambda x: x**3 ,
 			4: np.sin ,
 			5: np.cos ,
-			6: np.tan }
+			6: np.tan ,
 			7: np.exp ,
 			8: lambda x: np.sqrt(np.abs(x)) }
 
