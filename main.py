@@ -1,5 +1,6 @@
 import sys
 import numpy as np
+import matplotlib.pyplot as plt
 
 f_list = { 1: lambda x: x }
 
@@ -13,5 +14,8 @@ if __name__ == '__main__':
 	xval = np.arange(-5.0,+5.1,0.1)
 	yval = f(xval)
 
-	print(xval)
-	print(yval)
+	plt.plot(xval,yval)
+	plt.grid()
+	plt.xlabel('$x$')
+	plt.ylabel('$f(x)$')
+	plt.show()
