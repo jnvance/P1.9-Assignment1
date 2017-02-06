@@ -7,6 +7,9 @@ import matplotlib.pyplot as plt
 f_list = { 	1: lambda x: x ,
 			2: lambda x: x**2 ,
 			3: lambda x: x**3 }
+			4: np.sin ,
+			5: np.cos ,
+			6: np.tan }
 
 usage = "\
 Wrong or missing input 			\n\
@@ -17,6 +20,9 @@ Usage: python main.py [<key>]	\n\
 │   1   │  f(x) = x         │	\n\
 │   2   │  f(x) = x**2      │	\n\
 │   3   │  f(x) = x**3      │	\n\
+│   4   │  f(x) = sin(x)    │	\n\
+│   5   │  f(x) = cos(x)    │	\n\
+│   6   │  f(x) = tan(x)    │	\n\
 └───────┴───────────────────┘"
 
 if __name__ == '__main__':
