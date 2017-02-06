@@ -10,6 +10,8 @@ f_list = { 	1: lambda x: x ,
 			4: np.sin ,
 			5: np.cos ,
 			6: np.tan }
+			7: np.exp ,
+			8: lambda x: np.sqrt(np.abs(x)) }
 
 usage = "\
 Wrong or missing input 			\n\
@@ -23,6 +25,8 @@ Usage: python main.py [<key>]	\n\
 │   4   │  f(x) = sin(x)    │	\n\
 │   5   │  f(x) = cos(x)    │	\n\
 │   6   │  f(x) = tan(x)    │	\n\
+│   7   │  f(x) = exp(x)    │	\n\
+│   8   │  f(x) = sqrt(|x|) │	\n\
 └───────┴───────────────────┘"
 
 if __name__ == '__main__':
