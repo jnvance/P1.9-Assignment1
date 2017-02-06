@@ -21,7 +21,7 @@ if __name__ == '__main__':
 	except (IndexError,ValueError,KeyError):
 		raise ValueError(usage)
 	
-	xval = np.arange(-5.0,+5.1,0.1)
+	xval = np.arange(-3.0,+3.1,0.1)
 	yval = f(xval)
 
 	plt.plot(xval,yval)
