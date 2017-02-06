@@ -4,7 +4,9 @@ import sys
 import numpy as np
 import matplotlib.pyplot as plt
 
-f_list = { 1: lambda x: x }
+f_list = { 	1: lambda x: x ,
+			2: np.exp ,
+			3: lambda x: np.sqrt(np.abs(x)) }
 
 usage = "\
 Wrong or missing input 			\n\
@@ -13,6 +15,8 @@ Usage: python main.py [<key>]	\n\
 │  key  │   function        │	\n\
 ├───────┼───────────────────┤	\n\
 │   1   │  f(x) = x         │	\n\
+│   2   │  f(x) = exp(x)    │	\n\
+│   3   │  f(x) = sqrt(|x|) │	\n\
 └───────┴───────────────────┘"
 
 if __name__ == '__main__':
