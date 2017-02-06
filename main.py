@@ -2,7 +2,10 @@ import sys
 import numpy as np
 import matplotlib.pyplot as plt
 
-f_list = { 1: lambda x: x }
+f_list = { 	1: lambda x: x ,
+			2: np.sin ,
+			3: np.cos ,
+			4: np.tan }
 
 if __name__ == '__main__':
 	try:
@@ -10,7 +13,7 @@ if __name__ == '__main__':
 	except (IndexError,ValueError,KeyError):
 		print("Please provide integer input")
 		raise
-	
+
 	xval = np.arange(-5.0,+5.1,0.1)
 	yval = f(xval)
 
