@@ -16,6 +16,9 @@ Usage: python main.py [<key>]	\n\
 │  key  │   function        │	\n\
 ├───────┼───────────────────┤	\n\
 │   1   │  f(x) = x         │	\n\
+│   2   │  f(x) = sin(x)    │	\n\
+│   3   │  f(x) = cos(x)    │	\n\
+│   4   │  f(x) = tan(x)    │	\n\
 └───────┴───────────────────┘"
 
 if __name__ == '__main__':
